@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1b0c1f, #39132b, #453045); 
+    padding: 10px;
+}
+#clear-all {
+    background-color: #e0c5e0; 
+}
+.todoapp {
+    width: 100%;
+    max-width: 540px;
+    background: #3c2a3b; 
+    margin: 50px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todoapp h2 {
+    color: #fcded8;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.todoapp h2 img {
+    width: 24px;
+    margin-left: 7px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #cdbcc7; 
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #3e073e; 
+    padding: 5px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #2b091d; 
+    font-size: 18px;
+    opacity: 1;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: linear-gradient(90deg, #3f273f, #341d33, #2d172d); 
+    color: #fcded8; 
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 18px;
+    color: #fcded8;
+    padding: 12px 8px 12px 40px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(Dark-image-Photoroom\ .png); 
+    background-size: cover;
+    background-position: center;
+}
+
+ul li.checked {
+    color: #bc9bae; 
+    text-decoration: line-through; 
+}
+
+ul li.checked::before {
+    background-image: url(https://i.pinimg.com/564x/ea/b2/b8/eab2b8585d9e15e3ac2e47273ce367e1.jpg); 
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #ba789c; 
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #6f4e6f; 
+}
